@@ -1,0 +1,25 @@
+name: Submit a Flag
+description: You cleared a quest? Submit your flag here.
+title: "Flag submission"
+labels: ["flag"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste the flag that `quest.py` showed you.
+        Each flag works only for **your** GitHub account, so copying someone else's flag will not work.
+  - type: input
+    id: quest
+    attributes:
+      label: Quest
+      description: The name of the quest folder.
+      placeholder: quest-00
+    validations:
+      required: true
+  - type: input
+    id: flag
+    attributes:
+      label: Flag
+      placeholder: FLAG{xxxxxxxxxx}
+    validations:
+      required: true

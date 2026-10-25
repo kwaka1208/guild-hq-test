@@ -1,0 +1,25 @@
+name: Register a Team Repository
+description: (Team leaders only) Tell the guild where your team's game lives.
+title: "Team repository"
+labels: ["team-repo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Create your team's repository from the game template first.
+        The repository must be **public**.
+  - type: input
+    id: team
+    attributes:
+      label: Team
+      description: Your team name (the same name you used when you joined).
+      placeholder: team-a
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/your-id/your-game
+    validations:
+      required: true

@@ -1,0 +1,27 @@
+name: Join the Guild
+description: Register yourself as a member of the guild. Do this first!
+title: "Join the Guild"
+labels: ["join"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome, adventurer! Fill in this form to join the guild.
+        This repository is **public**. Anyone on the internet can read it.
+        **Do not write your real name.**
+  - type: input
+    id: handle
+    attributes:
+      label: Handle
+      description: The name shown on the leaderboard. Use 1-20 letters, numbers, spaces, `-` or `_`. Not your real name!
+      placeholder: Falcon
+    validations:
+      required: true
+  - type: input
+    id: team
+    attributes:
+      label: Team
+      description: Your team name. Use lowercase letters, numbers and `-` only.
+      placeholder: team-a
+    validations:
+      required: true
